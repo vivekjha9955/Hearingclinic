@@ -1,0 +1,41 @@
+.top-bar {
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 13px;
+  padding: 7px 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.top-bar__right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-bar__link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 6px;
+  transition: opacity 0.2s;
+
+}
+
+.top-bar__link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .top-bar__left {
+    display: none;
+  }
+}
