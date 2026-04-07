@@ -1,0 +1,90 @@
+.about {
+  background: var(--section-bg);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about__img-wrap {
+  position: relative;
+}
+
+.about__img-main {
+  width: 100%;
+  border-radius: 20px;
+  height: 420px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--teal) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__img-main i {
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.about__badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--accent);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.35);
+}
+
+.about__badge-num {
+  font-size: 36px;
+  font-weight: 800;
+  display: block;
+  line-height: 1;
+}
+
+.about__badge-label {
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+}
+
+.about__content {
+  padding-bottom: 20px;
+}
+
+.about__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--text);
+  margin: 12px 0 20px;
+  line-height: 1.3;
+}
+
+.about__content p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.about__btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about__badge {
+    position: static;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}

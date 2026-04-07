@@ -1,0 +1,68 @@
+.appt-bar {
+  background: var(--light-blue);
+  border-top: 3px solid var(--primary);
+  padding: 18px 0;
+}
+
+.appt-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.appt-bar__heading {
+  font-size: 16px;
+  color: var(--primary-dark);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.appt-bar__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.appt-bar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.appt-bar__link--phone {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.appt-bar__link--phone:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.appt-bar__link--whatsapp {
+  border: 2px solid #25d366;
+  color: #25d366;
+}
+
+.appt-bar__link--whatsapp:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .appt-bar__heading {
+    font-size: 14px;
+    text-align: center;
+  }
+}
